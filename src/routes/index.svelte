@@ -46,7 +46,7 @@
 	<img src="logo-192.png" alt="">
 	<h1>My name is Salomo Hutapea</h1>
 	<p>Find your next assignment right here.</p>
-	<a href="jobs" class="btn">view jobs</a>
+	<a href="." class="btn">Hello</a>
 </div>
 
 
