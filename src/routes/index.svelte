@@ -5,35 +5,30 @@
 <style>
 
 	h1, p {
-		text-align: center;
 		margin: 0 auto;
 	}
 
 	h1 {
-		font-size: 2rem;
-		text-transform: uppercase;
+		font-size: 6rem;
+		font-style: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
-	}
-
-	img {
-		width: 200px;
-		margin: 0 auto;
-		display: block;
+		color: #000;
 	}
 
 	a {
 		margin-top: 40px;
 	}
 
-	div {
+	div.content {
 		margin-top: 60px;
-		text-align: center;
+		grid-template-columns: 1fr 1fr;
+		display: grid;
 	}
 
-	@media (min-width: 480px) {
+	@media (max-width: 480px) {
 		h1 {
-			font-size: 4em;
+			font-size: 4rem;
 		}
 	}
 </style>
@@ -42,11 +37,12 @@
 	<title>Salomo Hutapea</title>
 </svelte:head>
 
-<div>
-	<img src="logo-192.png" alt="">
-	<h1>My name is Salomo Hutapea</h1>
-	<p>Find your next assignment right here.</p>
-	<a href="." class="btn">Hello</a>
+<div class="content">
+	<div>
+		<h1>Software Engineer</h1>
+		<p>My name is Salomo Hutapea</p>
+		<a href="." class="btn">Hello</a>
+	</div>
 </div>
 
 

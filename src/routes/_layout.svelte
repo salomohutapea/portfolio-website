@@ -7,10 +7,9 @@
 
 <style>
 	main {
-		position: relative;
 		max-width: 960px;
 		background-color: white;
-		padding: 60px 10px;
+		padding: 100px 10px 30px 10px;
 		margin: 0 auto;
 	}
 </style>
