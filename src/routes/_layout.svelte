@@ -9,8 +9,13 @@
 	main {
 		max-width: 960px;
 		background-color: white;
-		padding: 100px 10px 30px 10px;
+		padding: 0 10px;
 		margin: 0 auto;
+	}
+	@media (max-width: 958px) {
+		main {
+			margin-left: 10px;
+		}
 	}
 </style>
 

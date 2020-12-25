@@ -1,11 +1,14 @@
 <style>
     footer {
-        padding: 20px;
+        padding: 20px 0px;
         margin: 40px auto 0;
+        position: fixed;
+        bottom: 0;
         border-top: 1px solid #f2f2f2;
         text-align: center;
         background-color: #000;
         color: white;
+        width: 100%;
     }
     .copyright {
         color: #bbb;
@@ -18,6 +21,10 @@
     }
     a:hover {
         text-decoration: underline;
+    }
+    span {
+        padding: 0 20px;
+        display: block;
     }
 </style>
 
