@@ -8,6 +8,7 @@
 		width: 100%;
 		background: #ffffff;
 		border-bottom: 1px solid rgba(0,0,0,0.05);
+		z-index: 1000;
 	}
 	nav div {
 		max-width: 960px;

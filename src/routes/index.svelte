@@ -23,7 +23,21 @@
 	div.content {
 		margin-top: 60px;
 		grid-template-columns: 1fr 1fr;
-		display: grid;
+		display: inline-grid;
+		column-gap: 150px;
+	}
+
+	.div-img {
+		max-width: 100%;
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+	}
+
+	img {
+		object-fit: cover;
+		width: 70%;
+		border-radius: 50%;
 	}
 
 	@media (max-width: 480px) {
@@ -42,6 +56,9 @@
 		<h1 data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">Software Engineer</h1>
 		<p data-aos="fade-down" data-aos-delay="300" data-aos-duration="500">My name is Salomo Hutapea</p>
 		<a data-aos="fade-down" data-aos-delay="500" data-aos-duration="500" href="." class="btn" >Hello</a>
+	</div>
+	<div class="div-img">
+		<img src="picc.png" alt="Salomo Hutapea">
 	</div>
 </div>
 
