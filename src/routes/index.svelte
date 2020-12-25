@@ -39,9 +39,9 @@
 
 <div class="content">
 	<div>
-		<h1>Software Engineer</h1>
-		<p>My name is Salomo Hutapea</p>
-		<a href="." class="btn">Hello</a>
+		<h1 data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">Software Engineer</h1>
+		<p data-aos="fade-down" data-aos-delay="300" data-aos-duration="500">My name is Salomo Hutapea</p>
+		<a data-aos="fade-down" data-aos-delay="500" data-aos-duration="500" href="." class="btn" >Hello</a>
 	</div>
 </div>
 
