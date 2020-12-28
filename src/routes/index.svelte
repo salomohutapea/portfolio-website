@@ -36,11 +36,11 @@
   		align-items: center;
 	}
 
-	img {
+	/* img {
 		object-fit: cover;
 		width: 70%;
 		border-radius: 50%;
-	}
+	} */
 
 	@media (max-width: 619px) {
   		div.content {
