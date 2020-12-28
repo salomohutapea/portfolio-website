@@ -9,8 +9,9 @@
 	main {
 		max-width: 960px;
 		background-color: white;
-		padding: 0 10px;
+		padding: 59px 10px 59px 10px;
 		margin: 0 auto;
+		height: 82.3vh;
 	}
 	@media (max-width: 958px) {
 		main {

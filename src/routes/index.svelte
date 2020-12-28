@@ -24,8 +24,7 @@
 	/* 61.531px navbar */
 	/* 59px footer */
 	div.content {
-		margin-top:81.531px;
-		margin-bottom: 79px;
+		height: 100%;
 		display: inline-grid;
 	}
 
@@ -36,11 +35,13 @@
   		align-items: center;
 	}
 
-	/* img {
-		object-fit: cover;
-		width: 70%;
-		border-radius: 50%;
-	} */
+	div.landing {
+		align-self: center;
+	}
+
+	.fa-chevron-right {
+		margin-left: 10px;
+	}
 
 	@media (max-width: 619px) {
   		div.content {
@@ -71,7 +72,7 @@
 </svelte:head>
 
 <div class="content">
-	<div>
+	<div class="landing">
 		<h1 data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">Hello, I'm Salomo Hutapea</h1>
 		<p data-aos="fade-down" data-aos-delay="300" data-aos-duration="500">
 			Front-end Developer, Android Developer
@@ -79,7 +80,7 @@
 			<br>
 			Skills: <b>HTML CSS JS, Kotlin</b>
 		</p>
-		<a data-aos="fade-down" data-aos-delay="500" data-aos-duration="500" href="." class="btn" >Hello</a>
+		<a data-aos="fade-down" data-aos-delay="500" data-aos-duration="500" href="." class="btn" >See my works<i class="fas fa-chevron-right"></i></a>
 	</div>
 	<div class="div-img">
 		<!-- <img src="picc.png" alt="Salomo Hutapea"> -->
