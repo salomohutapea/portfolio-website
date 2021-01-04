@@ -1,5 +1,4 @@
 <script>
-	import successkid from 'images/successkid.jpg';
 </script>
 
 <style>
@@ -80,7 +79,7 @@
 			<br>
 			Skills: <b>HTML CSS JS, Kotlin</b>
 		</p>
-		<a data-aos="fade-down" data-aos-delay="500" data-aos-duration="500" href="." class="btn" >See my works<i class="fas fa-chevron-right"></i></a>
+		<a data-aos="fade-down" data-aos-delay="500" data-aos-duration="500" href="/works" class="btn" >See my works<i class="fas fa-chevron-right"></i></a>
 	</div>
 	<div class="div-img">
 		<!-- <img src="picc.png" alt="Salomo Hutapea"> -->
