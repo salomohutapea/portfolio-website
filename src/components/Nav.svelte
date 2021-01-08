@@ -273,14 +273,14 @@
 					href="contact">Contact</a>
 			</li>
 			<li><a href="works" class="btn">Works</a></li>
-			<li>
+			<!-- <li>
 				<div class="div-switch">
 					<input type="checkbox" id="switch-theme" class="switch-theme" />
 					<label for="switch-theme">
 						<div class="toggle" />
 					</label>
 				</div>
-			</li>
+			</li> -->
 		</ul>
 	</header>
 </nav>
