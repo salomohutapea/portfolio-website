@@ -4,10 +4,10 @@
         margin: 40px auto 0;
         position: fixed;
         bottom: 0;
-        border-top: 1px solid #f2f2f2;
+        border-top: 1px solid var(--primaryColor);
         text-align: center;
-        background-color: #000;
-        color: white;
+        background-color: #121212;
+        color: #EEE;
         width: 100%;
     }
     .copyright {
@@ -18,6 +18,7 @@
         text-decoration: none;
         font-weight: 600;
         transition: 300ms;
+        color: #EEE;
     }
     a:hover {
         text-decoration: underline;
@@ -29,5 +30,5 @@
 </style>
 
 <footer>
-    <span class="copyright">© 2020 All rights reserved. – Created by <a href=".">Salomo Hutapea</a> using <a target="_blank" rel="noreferrer" href="https://sapper.svelte.dev/">Sapper</a></span>
+    <span class="copyright">© 2021 All rights reserved. – Created by <a href=".">Salomo Hutapea</a> using <a target="_blank" rel="noreferrer" href="https://sapper.svelte.dev/">Sapper</a></span>
 </footer>

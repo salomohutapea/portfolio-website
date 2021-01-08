@@ -13,7 +13,6 @@
 	.header {
 		display: grid;
 		grid-template-columns: 3fr 1fr;
-		background-color: #fff;
 		position: fixed;
 		width: 100%;
 		z-index: 3;
@@ -26,13 +25,12 @@
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-		background-color: #fff;
 	}
 
 	.header li a {
 		display: block;
 		padding: 10px 20px;
-		margin-left: 10px;
+		margin-left: 20px;
 		text-decoration: none;
 	}
 
@@ -74,7 +72,7 @@
 	}
 
 	.header .menu-icon .navicon {
-		background: #333;
+		background: var(--primaryColor);
 		display: block;
 		height: 2px;
 		position: relative;
@@ -84,7 +82,7 @@
 
 	.header .menu-icon .navicon:before,
 	.header .menu-icon .navicon:after {
-		background: #333;
+		background: var(--primaryColor);
 		content: "";
 		display: block;
 		height: 100%;
@@ -112,7 +110,7 @@
 	}
 
 	.header .menu-btn:checked ~ .menu-icon .navicon {
-		background: transparent;
+		background: transparent !important;
 	}
 
 	.header .menu-btn:checked ~ .menu-icon .navicon:before {
@@ -126,6 +124,13 @@
 	.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 	.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 		top: 0;
+	}
+
+	.header, ul, h4, a.nav-link {
+		background: var(--bgColor);
+	}
+	.navicon, .navicon:before, .navicon:after{
+		background: var(--primaryColor);
 	}
 
 	/* 48em = 768px */
@@ -197,10 +202,16 @@
 			padding-bottom: 20px;
 		}
 		.header {
-			border-bottom: 1px solid #00000055;
+			border-bottom: 1px solid var(--primaryColor);
 		}
 		.nav-link {
 			padding: 20px 0;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		a.nav-link:hover {
+			color: var(--blue);
 		}
 	}
 </style>
