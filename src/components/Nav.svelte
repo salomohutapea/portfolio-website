@@ -209,6 +209,38 @@
 		}
 	}
 
+	    /* -------- Switch Styles ------------*/
+	#switch-theme {
+        display: none;
+    }
+    /* Toggle */
+    .switch-theme:checked + .div-switch .toggle {
+        transform: translateX(100%);
+        background-color: #34323d;
+	}
+	.div-switch {
+		display: grid;
+	}
+    .div-switch label,
+    .toggle {
+        height: 1em;
+        border-radius: 10px;
+    }
+    .div-switch label {
+        width: 2em;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+    .div-switch .toggle {
+        position: absolute;
+        width: 50%;
+        background-color: #fff;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
 	@media (prefers-color-scheme: dark) {
 		a.nav-link:hover {
 			color: var(--blue);
@@ -241,6 +273,14 @@
 					href="contact">Contact</a>
 			</li>
 			<li><a href="works" class="btn">Works</a></li>
+			<li>
+				<div class="div-switch">
+					<input type="checkbox" id="switch-theme" class="switch-theme" />
+					<label for="switch-theme">
+						<div class="toggle" />
+					</label>
+				</div>
+			</li>
 		</ul>
 	</header>
 </nav>
