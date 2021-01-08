@@ -9,7 +9,8 @@
 		{
 			"src": "picc.png",
 			"sizes": "1200x1200",
-			"type": "image/png"
+			"type": "image/png",
+			"purpose": "any maskable"
 		}
 	]
 }
