@@ -2,23 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
 
 body {
+    --blue: #3340FF !important;
+    --primaryColor: #000 !important;
+    --bgColor: #FFF !important;
 	margin: 0;
 	font-family: Poppins;
 	font-size: 14px;
-	line-height: 1.5;
-	color: #000;
+    line-height: 1.5;
+    background: var(--bgColor);
 }
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 }
 
-h1 {
-	font-size: 2em;
+h1, h2, h3, h4, h5, h6, p, a {
+    color: var(--primaryColor);
 }
 
-a {
-	color: inherit;
+h1 {
+	font-size: 2em;
 }
 
 @media (min-width: 400px) {
@@ -31,7 +34,7 @@ a {
     font-weight: 600;
     font-size: 16px;
     color: #fff;
-    background-color: #3340FF;
+    background-color: var(--blue);
     padding: 10px 24px;
     letter-spacing: 0px;
     box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1), 0 1px 2px rgba(28,35,139,0.1), 0 2px 5px rgba(41,52,204,0.2);
@@ -43,4 +46,16 @@ a {
     border: none;
 	transition: .3s ease;
 	text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        --primaryColor: #EEE !important;
+        --bgColor: #121212 !important;
+        font-weight: 300;
+    }
+    body.light-mode{
+        --primaryColor: white !important;
+        --bgColor: black !important;
+    }
 }

@@ -13,7 +13,6 @@
 		font-style: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
-		color: #000;
 		margin-left: -4px;
 	}
 
