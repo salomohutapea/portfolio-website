@@ -223,12 +223,6 @@
 					class:current={segment === 'about'}
 					href="about">About</a>
 			</li>
-			<li>
-				<a
-					class="nav-link"
-					class:current={segment === 'contact'}
-					href="contact">Contact</a>
-			</li>
 			<li><a href="works" class="btn">Works</a></li>
 		</ul>
 	</header>

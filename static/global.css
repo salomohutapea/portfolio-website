@@ -18,7 +18,8 @@ h1 {
 }
 
 a {
-	color: inherit;
+    color: inherit;
+    text-decoration: none;
 }
 
 @media (min-width: 400px) {

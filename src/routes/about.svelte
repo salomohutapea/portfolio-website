@@ -16,9 +16,9 @@
 		<div data-aos="fade-down" data-aos-delay="400" class="socials">
 			<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/salomohutapea/"><i class="fab fa-linkedin"></i></a>
 			<a target="_blank" rel="noreferrer" href="https://www.github.com/salomohutapea/"><i class="fab fa-github"></i></a>
-			<a target="_blank" rel="noreferrer" href="https://www.facebook.com/qwertysalomo/"><i class="fab fa-facebook-square"></i></a>
 			<a target="_blank" rel="noreferrer" href="https://www.twitter.com/salomohutapea/"><i class="fab fa-twitter"></i></a>
 			<a target="_blank" rel="noreferrer" href="https://www.instagram.com/salomohutapea/"><i class="fab fa-instagram"></i></a>
+			<a target="_blank" rel="noreferrer" href="https://line.me/ti/p/~salomohutapea17"><i class="fab fa-line"></i></a>
 		</div>
 	</div>
 </div>

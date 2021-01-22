@@ -1,0 +1,39 @@
+{
+    "works": [
+        {
+            "desc": "Web app for FIND IT 2020 competition",
+            "images": [
+                "https://firebasestorage.googleapis.com/v0/b/salomohutapea-website.appspot.com/o/works%2Ffind-it-2020%2Ffindit1.png?alt=media&token=2f7f2da8-481c-406a-86d4-8c0c49d2736c",
+                "https://firebasestorage.googleapis.com/v0/b/salomohutapea-website.appspot.com/o/works%2Ffind-it-2020%2Ffindit2.png?alt=media&token=719fae54-4b52-4426-9918-f3d36938beea",
+                "https://firebasestorage.googleapis.com/v0/b/salomohutapea-website.appspot.com/o/works%2Ffind-it-2020%2Ffindit3.png?alt=media&token=4bf13fd0-3d47-4bf9-8470-3cb850a85157",
+                "https://firebasestorage.googleapis.com/v0/b/salomohutapea-website.appspot.com/o/works%2Ffind-it-2020%2Ffindit4.png?alt=media&token=c6b00971-bd00-44b4-9290-ea0924a0b793"
+            ],
+            "name": "FIND IT 2020",
+            "slug": "find-it-2020"
+        },
+        {
+            "desc": "A plant disease detector app",
+            "images": [
+                "a"
+            ],
+            "name": "Cultivatia",
+            "slug": "cultivatia"
+        },
+        {
+            "desc": "Realtime chat app, using Socket.io, Express.js, and Node.js",
+            "images": [
+                "a"
+            ],
+            "name": "NomNom Chat",
+            "slug": "nomnom-chat"
+        },
+        {
+            "desc": "Food ordering app, made using Kotlin and Express.js",
+            "images": [
+                "a"
+            ],
+            "name": "NomNom App",
+            "slug": "nomnom-app"
+        }
+    ]
+}
