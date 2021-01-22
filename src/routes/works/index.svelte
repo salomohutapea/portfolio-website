@@ -17,7 +17,7 @@
 	<h1>My works</h1>
 	<section class="work-card">
 		{#each works as work}
-			<WorkCard {work} />
+			<WorkCard {work}/>
 		{/each}
 	</section>
 </div>

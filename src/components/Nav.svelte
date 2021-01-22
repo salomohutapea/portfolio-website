@@ -12,7 +12,7 @@
 
 	.header {
 		display: grid;
-		grid-template-columns: 3fr 1fr;
+		grid-template-columns: 0fr 1fr;
 		background-color: #fff;
 		position: fixed;
 		width: 100%;
@@ -207,7 +207,7 @@
 
 <nav>
 	<header class="header">
-		<h4>Salomo<span>Hutapea</span></h4>
+		<a href="."><h4>Salomo<span>Hutapea</span></h4></a>
 		<input class="menu-btn" type="checkbox" id="menu-btn" />
 		<label class="menu-icon" for="menu-btn"><span class="navicon" /></label>
 		<ul class="menu">
