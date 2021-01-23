@@ -41,7 +41,8 @@
         margin-top: 1.5em;
         position: absolute;
         width: 100px;
-        border: 2px solid #3340ff;
+        height: 2px;
+        background: #3340ff;
     }
     section {
 		gap: 3em;
