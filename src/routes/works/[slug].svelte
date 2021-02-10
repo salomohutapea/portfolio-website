@@ -20,6 +20,11 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Work - {work.name}</title>
+</svelte:head>
+
+
 <div>
 	<h2>{work.name}</h2>
 	<h4>{work.desc}</h4>
@@ -57,6 +62,7 @@
 	img {
 		max-width: 100%;
 		margin: 0 auto;
+		object-fit: contain;
 	}
 
 	div {

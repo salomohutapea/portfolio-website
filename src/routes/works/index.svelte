@@ -13,6 +13,10 @@
 	import WorkCard from './_WorkCard.svelte';
 </script>
 
+<svelte:head>
+	<title>Work | Salomo Hutapea</title>
+</svelte:head>
+
 <div class="wrapper">
 	<h1>My works</h1>
 	<section class="work-card">

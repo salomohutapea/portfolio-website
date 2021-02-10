@@ -3,16 +3,14 @@
 	import Footer from '../components/Footer.svelte';
 	import { fade } from 'svelte/transition';
 	import { stores } from '@sapper/app';
-	import PageLoadingBar from 'sapper-page-loading-bar/PageLoadingBar.svelte';
+	import PageLoadingBar from '../components/PageLoadingBar.svelte';
 
 	const { preloading } = stores();
 	export let segment;
-	let color1 = "#3340FF"
-	let color2 = "#0070f3"
 </script>
 
 <div>
-	<PageLoadingBar {preloading} {color1} {color2}/>
+	<PageLoadingBar {preloading}/>
 	<Nav {segment} />
 
 	{#if !$preloading}

@@ -57,10 +57,10 @@
 		margin-bottom: 0.5em;
 		gap: 0.625em;
 	}
-	p.date {
+	/* p.date {
 		font-size: 0.75rem;
 		color: #b1b1b1;
-	}
+	} */
 	h3 {
 		color: #000000;
 		line-height: 1.5em;
