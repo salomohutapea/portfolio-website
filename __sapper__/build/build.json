@@ -2,44 +2,44 @@
   "bundler": "rollup",
   "shimport": "2.0.4",
   "assets": {
-    "main": "client.fe93ee5f.js"
+    "main": "client.13a12161.js"
   },
   "css": {
     "main": [
-      "client-25a03f97.css"
+      "client-8b5ce81a.css"
     ]
   },
   "dependencies": {
     "index.svelte": [
-      "index.4eebc862.js",
+      "index.d1e72fb6.js",
       "inject_styles.5607aec6.js",
-      "index-1e647cca.css"
+      "index-b10781fa.css"
     ],
     "about.svelte": [
-      "about.095ab1c0.js",
+      "about.1a75a3ab.js",
       "inject_styles.5607aec6.js",
       "about-8d3c048c.css"
     ],
     "works/_WorkCard.svelte": [
-      "index.6825ccfa.js",
+      "index.d44c3512.js",
       "browser-ponyfill.069e66b8.js",
       "inject_styles.5607aec6.js",
       "index-4d2ee4ef.css"
     ],
     "works/index.svelte": [
-      "index.6825ccfa.js",
+      "index.d44c3512.js",
       "browser-ponyfill.069e66b8.js",
       "inject_styles.5607aec6.js",
       "index-4d2ee4ef.css"
     ],
     "works/[slug].svelte": [
-      "[slug].7f01b68d.js",
+      "[slug].bed1437f.js",
       "browser-ponyfill.069e66b8.js",
       "inject_styles.5607aec6.js",
-      "[slug]-6c1a7fc3.css"
+      "[slug]-36ce019c.css"
     ]
   },
   "legacy_assets": {
-    "main": "client.9a5a5d4f.js"
+    "main": "client.fe201264.js"
   }
 }
