@@ -45,3 +45,7 @@ a {
 	transition: .3s ease;
 	text-decoration: none;
 }
+
+.btn:hover {
+    background-color: #0070f3;
+}

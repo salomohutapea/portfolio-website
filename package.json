@@ -16,6 +16,7 @@
     "mauss": "0.0.3",
     "node-fetch": "^2.6.1",
     "polka": "next",
+    "sapper-page-loading-bar": "^1.0.0",
     "sirv": "^1.0.0"
   },
   "devDependencies": {

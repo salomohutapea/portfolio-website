@@ -21,41 +21,45 @@
 </script>
 
 <div>
-    <h2>{work.name}</h2>
-    <h4>{work.desc}</h4>
-    <section>
+	<h2>{work.name}</h2>
+	<h4>{work.desc}</h4>
+	<section>
 		{#each work.images as image}
 			<div>
-                <img src="{image}" alt="Work"/>
-            </div>
+				<img src={image} alt="Work" />
+			</div>
 		{/each}
 	</section>
 </div>
 
 <style>
-    h4 {
-        font-weight: 300;
-    }
-    h2::before {
-        content: "";
-        margin-top: 1.5em;
-        position: absolute;
-        width: 100px;
-        height: 2px;
-        background: #3340ff;
-    }
-    section {
+	h4 {
+		font-weight: 300;
+	}
+	h2::before {
+		content: '';
+		margin-top: 1.5em;
+		position: absolute;
+		width: 100px;
+		height: 2px;
+		background: #3340ff;
+	}
+	section {
 		gap: 3em;
-        grid-template-columns: repeat(auto-fit, minmax(21em, auto));
-        justify-content: space-evenly;
+		grid-template-columns: repeat(auto-fit, minmax(21em, auto));
+		justify-content: space-evenly;
 		display: grid;
 		padding-bottom: 107px;
-    }
-    section div {
-        display: flex;
-    }
-    img {
-        max-width: 100%;
-        margin: 0 auto;
-    }
+	}
+	section div {
+		display: flex;
+	}
+	img {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	div {
+		width: 100%;
+	}
 </style>
