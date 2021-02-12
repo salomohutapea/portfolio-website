@@ -1,10 +1,15 @@
 <script>
-	export let segment;
+	export let segment, preloading;
+
+	let show_menu = false;
+	
+	$: if(!$preloading) {show_menu = false};
+
 </script>
 
 <nav>
 	<a href="."><h4>Salomo<span>Hutapea</span></h4></a>
-	<input class="menu-btn" type="checkbox" id="menu-btn" />
+	<input class="menu-btn" type="checkbox" id="menu-btn" bind:checked={show_menu}/>
 	<label class="menu-icon" for="menu-btn"><span class="navicon" /></label>
 	<ul class="menu">
 		<li>
@@ -24,6 +29,7 @@
 		background-color: #fff;
 		position: fixed;
 		width: 100%;
+		box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
 		z-index: 3;
 	}
 
@@ -63,7 +69,7 @@
 	nav .menu {
 		clear: both;
 		max-height: 0;
-		transition: max-height 0.2s ease-out;
+		transition: max-height 0.3s ease-out;
 	}
 
 	nav .menu-icon {
@@ -132,7 +138,6 @@
 		nav {
 			display: flex;
 			justify-content: space-between;
-			border-bottom: 1px solid #cccccc;
 		}
 		nav li {
 			float: left;
@@ -149,10 +154,11 @@
 		}
 		nav a.current {
 			border-bottom: 3px solid #3340ff;
+			margin-top: 3px;
 			color: #3340ff;
 		}
 		nav a.nav-link:hover {
-			color: #3340ff55;
+			color: #3340ff;
 		}
 		nav .menu {
 			max-height: none;
@@ -175,9 +181,6 @@
 		}
 		nav .btn {
 			margin-bottom: 10px;
-		}
-		nav {
-			border-bottom: 1px solid #00000055;
 		}
 		nav li a {
 			margin-left: 0;

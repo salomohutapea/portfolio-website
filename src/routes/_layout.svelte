@@ -6,12 +6,13 @@
 	import PageLoadingBar from '../components/PageLoadingBar.svelte';
 
 	const { preloading } = stores();
+
 	export let segment;
 </script>
 
 <div>
 	<PageLoadingBar {preloading}/>
-	<Nav {segment} />
+	<Nav {segment} {preloading}/>
 
 	{#if !$preloading}
 		<main transition:fade>

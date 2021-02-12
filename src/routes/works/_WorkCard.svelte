@@ -3,7 +3,7 @@
 </script>
 
 <a href="works/{work.slug}">
-	<div class="work-card" data-aos="fade-down" data-aos-easing="ease">
+	<div class="work-card">
 		<div class="work-image">
 			<img src={work.images[0]} alt="works" />
 		</div>

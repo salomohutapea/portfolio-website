@@ -7,16 +7,15 @@
 
 <div class="content-landing">
 	<div class="landing">
-		<h1 data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">Hello, I'm Salomo Hutapea</h1>
-		<p data-aos="fade-down" data-aos-delay="300" data-aos-duration="500">
+		<!-- data-aos="fade-down" data-aos-delay="100" data-aos-duration="500" -->
+		<h1>Hello, I'm Salomo Hutapea</h1>
+		<p>
 			Front-end Developer, Android Developer
 			<br />
 			<br />
 			Skills: <b>HTML CSS JS, Kotlin</b>
 		</p>
-		<a data-aos="fade-down" data-aos-delay="500" data-aos-duration="500" href="/works" class="btn"
-			>See my works<i class="fas fa-chevron-right" /></a
-		>
+		<a href="/works" class="btn">See my works<i class="fas fa-chevron-right" /></a>
 	</div>
 	<div class="div-img" />
 </div>
