@@ -7,7 +7,7 @@ on:
 
 jobs:
     release:
-        name: 🚀 release
+        name: 🚀 release static site
         runs-on: ubuntu-latest
         steps:
             - name: 📚 checkout
@@ -15,9 +15,9 @@ jobs:
             - name: 🟢 node
               uses: actions/setup-node@v1.4.2
               with:
-                  node-version: 14
+                  node-version: 12
                   registry-url: https://registry.npmjs.org
             - name: 🚀 publish
-              run: npm run export
+              run: npm install, run export
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
