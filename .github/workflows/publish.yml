@@ -18,7 +18,6 @@ jobs:
                   node-version: 14
                   registry-url: https://registry.npmjs.org
             - name: 🚀 publish
-              run: npm install
-              run: npm run export
+              run: npm install; npm run export
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
