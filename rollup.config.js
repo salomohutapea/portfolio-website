@@ -16,6 +16,7 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 const onwarn = (warning, onwarn) =>
 	(warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
 	(warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
+	(warning.plugin === 'css' && warning.message === 'No directory provided. Skipping CSS generation') ||
 	onwarn(warning);
 
 export default {
@@ -25,6 +26,7 @@ export default {
 		plugins: [
 			replace({
 				'process.browser': true,
+				'preventAssignment': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
@@ -75,6 +77,7 @@ export default {
 		plugins: [
 			replace({
 				'process.browser': false,
+				'preventAssignment': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
@@ -108,6 +111,7 @@ export default {
 			resolve(),
 			replace({
 				'process.browser': true,
+				'preventAssignment': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			commonjs(),
