@@ -21,3 +21,13 @@ jobs:
               run: npm install; npm run export
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+            - name: Pushes to another repository
+                  uses: cpina/github-action-push-to-another-repository@master
+                  env:
+                    API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+                  with:
+                    source-directory: '__sapper__/export'
+                    destination-github-username: 'salomohutapea'
+                    destination-repository-name: 'salomohutapea.github.io'
+                    user-email: hutapeasalomo@gmail.com
+                    target-branch: main
