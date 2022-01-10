@@ -67,7 +67,7 @@
 	}
 
 	nav span {
-		color: #3340ff;
+		color: var(--blue);
 	}
 
 	nav .btn {
@@ -75,7 +75,7 @@
 	}
 
 	nav .btn {
-		color: #fff;
+		color: var(--bw);
 	}
 
 	nav .menu {
@@ -172,12 +172,12 @@
 			margin-left: 5vw;
 		}
 		nav a.current {
-			border-bottom: 3px solid #3340ff;
+			border-bottom: 3px solid var(--blue);
 			margin-top: 3px;
-			color: #3340ff;
+			color: var(--blue);
 		}
 		nav a.nav-link:hover {
-			color: #3340ff;
+			color: var(--blue);
 		}
 		nav .menu {
 			max-height: none;

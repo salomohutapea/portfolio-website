@@ -86,7 +86,7 @@
 		margin-bottom: 20px;
 	}
 	.wrapper div h4 {
-		color: #3340ff;
+		color: var(--blue);
 		margin-bottom: 20px;
 	}
 	.wrapper div p {
@@ -106,7 +106,7 @@
 		transition-timing-function: ease-out;
 	}
 	.socials a i:hover {
-		color: #3340ff;
+		color: var(--blue);
 	}
 	@media (max-width: 880px) {
 		.wrapper {

@@ -34,7 +34,7 @@
 		transform: translateY(-0.5em);
 	}
 	.work-card:hover .work-detail h3 {
-		color: #3340FF;
+		color: var(--blue);
 	}
 	div > :global(.lmns-image) {
 		border-radius: 0.25em;

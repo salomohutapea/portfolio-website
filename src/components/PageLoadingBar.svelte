@@ -7,7 +7,7 @@
 <script>
     export let preloading
     export let height = "4px"
-    export let color1 = "#3340FF"
+    export let color1 = "var(--blue)"
     export let color2 = "#0070f3"
 
     $: style = `background-color: ${color1}; height: ${height}`

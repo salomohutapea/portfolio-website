@@ -67,7 +67,7 @@
 		position: absolute;
 		width: 100px;
 		height: 2px;
-		background: #3340ff;
+		background: var(--blue);
 	}
 	section {
 		gap: 3em;
@@ -84,6 +84,7 @@
 		margin: 0 auto;
 		object-fit: contain;
 		border-radius: 4px;
+		box-shadow: var(--shadowCardHover);
 	}
 	div {
 		width: 100%;
