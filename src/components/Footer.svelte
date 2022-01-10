@@ -1,3 +1,12 @@
+<script>
+    import { onMount } from "svelte"
+
+    let year
+
+    onMount(async () => {
+        year = new Date().getFullYear()
+    });
+</script>
 <style>
     footer {
         padding: 20px 0px;
@@ -29,5 +38,5 @@
 </style>
 
 <footer>
-    <span class="copyright">© 2021 All rights reserved. – Created by <a href=".">Salomo Hutapea</a> using <a target="_blank" rel="noreferrer" href="https://sapper.svelte.dev/">Sapper</a></span>
+    <span class="copyright">© 2021 - {year} All rights reserved. – Created by <a href=".">Salomo Hutapea</a> using <a target="_blank" rel="noreferrer" href="https://sapper.svelte.dev/">Sapper</a></span>
 </footer>
