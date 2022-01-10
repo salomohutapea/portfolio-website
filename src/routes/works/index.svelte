@@ -11,6 +11,12 @@
 <script>
     export let works;
 	import WorkCard from './_WorkCard.svelte';
+	import { onMount } from "svelte";
+	import * as animateScroll from "svelte-scrollto";
+
+	onMount(async () => {
+        animateScroll.scrollToTop();
+    });
 </script>
 
 <svelte:head>

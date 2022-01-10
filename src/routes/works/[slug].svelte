@@ -11,10 +11,16 @@
 </script>
 
 <script>
-	import { goto } from "@sapper/app";
-
 	export let works;
 	export let params;
+
+	import { goto } from "@sapper/app";
+	import { onMount } from "svelte";
+	import * as animateScroll from "svelte-scrollto";
+
+	onMount(async () => {
+        animateScroll.scrollToTop();
+    });
 
 	for (var i = 0; i < works.length; i++) {
 		if (works[i].slug === params.slug) {

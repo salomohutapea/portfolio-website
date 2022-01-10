@@ -1,24 +1,65 @@
+<script>
+	import { onMount } from "svelte";
+	import * as animateScroll from "svelte-scrollto";
+
+	onMount(async () => {
+		animateScroll.scrollToTop();
+	});
+</script>
+
 <svelte:head>
 	<title>About | Salomo Hutapea</title>
 </svelte:head>
 
 <div class="wrapper">
-	<img data-aos="fade-down" src="pic-portrait.jpg" alt="">
+	<img data-aos="fade-down" src="pic-portrait.jpg" alt="" />
 	<div>
-		<h1 data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">ABOUT ME</h1>
-		<h4 data-aos="fade-down" data-aos-delay="200">SALOMO HUTAPEA - SOFTWARE ENGINEER</h4>
+		<h1 data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">
+			ABOUT ME
+		</h1>
+		<h4 data-aos="fade-down" data-aos-delay="200">
+			SALOMO HUTAPEA - SOFTWARE ENGINEER
+		</h4>
 		<p data-aos="fade-down" data-aos-delay="300">
-			I started to know programming since senior high school. I wanted to explore more about programming.
-			So I took the Bachelor of Engineering program of Information Engineering at Universitas Gadjah Mada.
-			I am still studying at the university now. I have used and applied some programming languages such as Java, Kotlin, JavaScript on some projects.
-			Nowadays, I focus on front-end web development and android applications.
+			I started to know programming since senior high school. I wanted to
+			explore more about programming. So I took the Bachelor of
+			Engineering program of Information Engineering at Universitas Gadjah
+			Mada. I am still studying at the university now. I have used and
+			applied some programming languages such as Java, Kotlin, JavaScript
+			on some projects. Nowadays, I focus on front-end web development and
+			android applications.
 		</p>
 		<div data-aos="fade-down" data-aos-delay="400" class="socials">
-			<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/salomohutapea/"><i class="fab fa-linkedin"></i></a>
-			<a target="_blank" rel="noreferrer" href="https://www.github.com/salomohutapea/"><i class="fab fa-github"></i></a>
-			<a target="_blank" rel="noreferrer" href="https://www.twitter.com/salomohutapea/"><i class="fab fa-twitter"></i></a>
-			<a target="_blank" rel="noreferrer" href="https://www.instagram.com/salomohutapea/"><i class="fab fa-instagram"></i></a>
-			<a target="_blank" rel="noreferrer" href="https://line.me/ti/p/~salomohutapea17"><i class="fab fa-line"></i></a>
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href="https://www.linkedin.com/in/salomohutapea/"
+				><i class="fab fa-linkedin" /></a
+			>
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href="https://www.github.com/salomohutapea/"
+				><i class="fab fa-github" /></a
+			>
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href="https://www.twitter.com/salomohutapea/"
+				><i class="fab fa-twitter" /></a
+			>
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href="https://www.instagram.com/salomohutapea/"
+				><i class="fab fa-instagram" /></a
+			>
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href="https://line.me/ti/p/~salomohutapea17"
+				><i class="fab fa-line" /></a
+			>
 		</div>
 	</div>
 </div>
@@ -45,7 +86,7 @@
 		margin-bottom: 20px;
 	}
 	.wrapper div h4 {
-		color: #3340FF;
+		color: #3340ff;
 		margin-bottom: 20px;
 	}
 	.wrapper div p {
@@ -65,11 +106,11 @@
 		transition-timing-function: ease-out;
 	}
 	.socials a i:hover {
-		color: #3340FF;
+		color: #3340ff;
 	}
-	@media (max-width:880px) {
+	@media (max-width: 880px) {
 		.wrapper {
-			grid-template-columns: 1fr 0.1fr
+			grid-template-columns: 1fr 0.1fr;
 		}
 		.wrapper img {
 			display: none;
