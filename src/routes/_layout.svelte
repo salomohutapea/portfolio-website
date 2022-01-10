@@ -39,6 +39,7 @@
 		margin-top: 61.531px;
 		margin-bottom: 59px;
 		width: 100%;
+		justify-content: center;
 	}
 	@media (min-width: 48em) {
 		main {

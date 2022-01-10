@@ -40,6 +40,7 @@
 <style>
 	h4 {
 		font-weight: 300;
+		margin-bottom: 2em;
 	}
 	h2::before {
 		content: '';
@@ -51,7 +52,7 @@
 	}
 	section {
 		gap: 3em;
-		grid-template-columns: repeat(auto-fit, minmax(21em, auto));
+		grid-template-columns: repeat(auto-fit, minmax(16em, auto));
 		justify-content: space-evenly;
 		display: grid;
 		padding-bottom: 107px;
@@ -64,8 +65,10 @@
 		margin: 0 auto;
 		object-fit: contain;
 	}
-
 	div {
 		width: 100%;
+	}
+	h2 {
+		margin-top: 2em;
 	}
 </style>

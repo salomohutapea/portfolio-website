@@ -27,12 +27,15 @@
 </div>
 
 <style>
+	.wrapper {
+		padding-top: 1em;
+	}
     .wrapper h1 {
         margin-bottom: 30px;
     }
 	.work-card {
 		gap: 3em;
-		grid-template-columns: repeat(auto-fit, minmax(21em, auto));
+		grid-template-columns: repeat(auto-fit, minmax(18em, auto));
 		display: grid;
 		padding-bottom: 107px;
 	}
