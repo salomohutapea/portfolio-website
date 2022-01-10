@@ -1,14 +1,18 @@
 <script context="module">
-	import fetch from 'cross-fetch';
+	import fetch from "cross-fetch";
 
 	export async function preload({ params }) {
-		const res = await fetch('https://salomohutapea-website.firebaseio.com/works.json');
+		const res = await fetch(
+			"https://salomohutapea-website.firebaseio.com/works.json"
+		);
 		const works = await res.json();
 		return { works, params };
 	}
 </script>
 
 <script>
+	import { goto } from "@sapper/app";
+
 	export let works;
 	export let params;
 
@@ -24,8 +28,12 @@
 	<title>Work - {work.name}</title>
 </svelte:head>
 
-
 <div>
+	<!-- svelte-ignore a11y-missing-attribute -->
+	<!-- <a target="_blank" rel="noreferrer" on:click={() => goto("/works")}>
+		<i class="fas fa-arrow-left" />
+	</a> -->
+	<i class="fas fa-arrow-left" on:click={() => goto("/works")}/>
 	<h2>{work.name}</h2>
 	<h4>{work.desc}</h4>
 	<section>
@@ -43,7 +51,7 @@
 		margin-bottom: 2em;
 	}
 	h2::before {
-		content: '';
+		content: "";
 		margin-top: 1.5em;
 		position: absolute;
 		width: 100px;
@@ -70,6 +78,17 @@
 		width: 100%;
 	}
 	h2 {
-		margin-top: 2em;
+		margin-top: 1em;
+	}
+	i {
+		margin-top: 1em;
+		display: inline-block;
+		font-size: 1.5em;
+		color: var(--primaryColor);
+		transition: 300ms ease-in;
+	}
+	i:hover {
+		color: var(--blue);
+		cursor: pointer;
 	}
 </style>
