@@ -10,7 +10,20 @@
 
 <script>
     export let works;
+	
 	import WorkCard from './_WorkCard.svelte';
+	import { onMount } from "svelte";
+	
+	onMount(async () => {
+		const res = await fetch(
+			"https://salomohutapea-website.firebaseio.com/works.json"
+		);
+		works = await res.json();
+
+		checkWork();
+	});
+	
+	// TODO: ADD LOADING
 </script>
 
 <svelte:head>
