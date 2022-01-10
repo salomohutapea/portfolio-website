@@ -19,14 +19,19 @@
 	import * as animateScroll from "svelte-scrollto";
 
 	onMount(async () => {
-        animateScroll.scrollToTop();
-    });
+		animateScroll.scrollToTop();
+	});
 
 	for (var i = 0; i < works.length; i++) {
 		if (works[i].slug === params.slug) {
 			var work = works[i];
 			break;
 		}
+	}
+
+	function handleImgClick(src) {
+		// document.getElementById("img01").src = src;
+		// document.getElementById("modal01").style.display = "block";
 	}
 </script>
 
@@ -35,17 +40,17 @@
 </svelte:head>
 
 <div>
-	<!-- svelte-ignore a11y-missing-attribute -->
-	<!-- <a target="_blank" rel="noreferrer" on:click={() => goto("/works")}>
-		<i class="fas fa-arrow-left" />
-	</a> -->
-	<i class="fas fa-arrow-left" on:click={() => goto("/works")}/>
+	<i class="fas fa-arrow-left" on:click={() => goto("/works")} />
 	<h2>{work.name}</h2>
 	<h4>{work.desc}</h4>
 	<section>
 		{#each work.images as image}
 			<div>
-				<img src={image} alt="Work" />
+				<img
+					src={image}
+					alt="Work"
+					on:click={() => handleImgClick(image)}
+				/>
 			</div>
 		{/each}
 	</section>
