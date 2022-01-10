@@ -1,4 +1,4 @@
-name: "🚀 publish"
+name: "🚀 Publish"
 
 on:
     push:
@@ -7,20 +7,22 @@ on:
 
 jobs:
     release:
-        name: 🚀 release static site
+        name: Release site
         runs-on: ubuntu-latest
         steps:
-            - name: 📚 checkout
+            - name: Checkout
               uses: actions/checkout@v2
-            - name: 🟢 node
+            - name: Setup Node env
               uses: actions/setup-node@v2
               with:
                   node-version: 14
                   registry-url: https://registry.npmjs.org
-            - name: 🚀 publish
+            - name: Export static web
               run: npm install; npm run export
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+            - name: Add CNAME
+              run: touch CNAME; echo 'salomohutapea.me' > CNAME
             - name: Pushes to another repository
               uses: cpina/github-action-push-to-another-repository@master
               env:
