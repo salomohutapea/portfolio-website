@@ -23,14 +23,14 @@
 		gap: 1em;
 		align-content: flex-start;
 		border-radius: 0.75em;
-		background-color: #ffffff;
+		background-color: var(--bw);
 		width: 20em;
 		cursor: pointer;
-		box-shadow: 0px 3px 17px rgba(0, 0, 0, 0.14);
+		box-shadow: var(--shadowCard);
 		transition: all 300ms ease-out;
 	}
 	.work-card:hover {
-		box-shadow: 0px 3.4359px 38px rgba(0, 0, 0, 0.2);
+		box-shadow: var(--shadowCardHover);
 		transform: translateY(-0.5em);
 	}
 	.work-card:hover .work-detail h3 {
@@ -62,7 +62,6 @@
 		color: #b1b1b1;
 	} */
 	h3 {
-		color: #000000;
 		line-height: 1.5em;
 		transition: 300ms;
 		margin: 0;

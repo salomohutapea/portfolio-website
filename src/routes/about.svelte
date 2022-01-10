@@ -59,6 +59,7 @@
 		margin-right: 1em;
 	}
 	.socials a i {
+		color: var(--primaryColor);
 		font-size: 1.5em;
 		transition: 300ms;
 		transition-timing-function: ease-out;

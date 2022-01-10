@@ -1,9 +1,9 @@
 <script>
-	import Nav from '../components/Nav.svelte';
-	import Footer from '../components/Footer.svelte';
-	import { fade } from 'svelte/transition';
-	import { stores } from '@sapper/app';
-	import PageLoadingBar from '../components/PageLoadingBar.svelte';
+	import Nav from "../components/Nav.svelte";
+	import Footer from "../components/Footer.svelte";
+	import { fade } from "svelte/transition";
+	import { stores } from "@sapper/app";
+	import PageLoadingBar from "../components/PageLoadingBar.svelte";
 
 	const { preloading } = stores();
 
@@ -11,8 +11,8 @@
 </script>
 
 <div>
-	<PageLoadingBar {preloading}/>
-	<Nav {segment} {preloading}/>
+	<PageLoadingBar {preloading} />
+	<Nav {segment} {preloading} />
 
 	{#if !$preloading}
 		<main transition:fade>
@@ -29,6 +29,7 @@
 		display: flex;
 	}
 	main {
+		background: var(--bgColor);
 		display: flex;
 		height: 100vh;
 		width: 100%;

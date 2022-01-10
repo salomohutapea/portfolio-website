@@ -13,10 +13,10 @@
         margin: 40px auto 0;
         position: fixed;
         bottom: 0;
-        border-top: 1px solid #f2f2f2;
+        border-top: 1px solid var(--primaryColor);
         text-align: center;
-        background-color: #000;
-        color: white;
+        background-color: #121212;
+        color: #EEE;
         width: 100%;
     }
     .copyright {
@@ -27,6 +27,7 @@
         text-decoration: none;
         font-weight: 600;
         transition: 300ms;
+        color: #EEE;
     }
     a:hover {
         text-decoration: underline;

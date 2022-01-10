@@ -19,6 +19,14 @@
 			<a class="nav-link" class:current={segment === 'about'} href="about">About</a>
 		</li>
 		<li class="work-btn"><a href="works" class="btn">Works</a></li>
+		<!-- <li>
+				<div class="div-switch">
+					<input type="checkbox" id="switch-theme" class="switch-theme" />
+					<label for="switch-theme">
+						<div class="toggle" />
+					</label>
+				</div>
+			</li> -->
 	</ul>
 </nav>
 
@@ -26,10 +34,10 @@
 	nav {
 		display: grid;
 		grid-template-columns: 0fr 1fr;
-		background-color: #fff;
 		position: fixed;
 		width: 100%;
-		box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+		box-shadow: var(--shadow);
+		background: var(--bgColor);
 		z-index: 3;
 	}
 
@@ -40,7 +48,6 @@
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-		background-color: #fff;
 	}
 
 	nav li a {
@@ -48,6 +55,7 @@
 		padding: 10px 20px;
 		margin-left: 20px;
 		text-decoration: none;
+		color: var(--primaryColor)
 	}
 
 	nav h4 {
@@ -66,6 +74,10 @@
 		text-decoration: none;
 	}
 
+	nav .btn {
+		color: #fff;
+	}
+
 	nav .menu {
 		clear: both;
 		max-height: 0;
@@ -82,7 +94,7 @@
 	}
 
 	nav .menu-icon .navicon {
-		background: #333;
+		background: var(--primaryColor);
 		display: block;
 		height: 2px;
 		position: relative;
@@ -92,7 +104,7 @@
 
 	nav .menu-icon .navicon:before,
 	nav .menu-icon .navicon:after {
-		background: #333;
+		background: var(--primaryColor);
 		content: '';
 		display: block;
 		height: 100%;
@@ -118,7 +130,7 @@
 	}
 
 	nav .menu-btn:checked ~ .menu-icon .navicon {
-		background: transparent;
+		background: transparent !important;
 	}
 
 	nav .menu-btn:checked ~ .menu-icon .navicon:before {
@@ -132,6 +144,13 @@
 	nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 	nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 		top: 0;
+	}
+
+	ul, h4, .nav-link {
+		background: var(--bgColor);
+	}
+	.navicon, .navicon:before, .navicon:after{
+		background: var(--primaryColor);
 	}
 
 	@media (min-width: 48em) {
@@ -191,10 +210,49 @@
 		}
 		.work-btn {
 			display: flex;
+
 		}
 		.work-btn a {
 			margin: 10px 10px;
 			width: 100%;
+		}
+	}
+
+	/* -------- Switch Styles ------------*/
+	/* #switch-theme {
+        display: none;
+    } */
+    /* Toggle */
+    /* .switch-theme:checked + .div-switch .toggle {
+        transform: translateX(100%);
+        background-color: #34323d;
+	}
+	.div-switch {
+		display: grid;
+	}
+    .div-switch label,
+    .toggle {
+        height: 1em;
+        border-radius: 10px;
+    }
+    .div-switch label {
+        width: 2em;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+    .div-switch .toggle {
+        position: absolute;
+        width: 50%;
+        background-color: #fff;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    } */
+
+	@media (prefers-color-scheme: dark) {
+		a.nav-link:hover {
+			color: var(--blue);
 		}
 	}
 </style>

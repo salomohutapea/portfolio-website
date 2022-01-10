@@ -64,6 +64,7 @@
 		max-width: 100%;
 		margin: 0 auto;
 		object-fit: contain;
+		border-radius: 4px;
 	}
 	div {
 		width: 100%;
