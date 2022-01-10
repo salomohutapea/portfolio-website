@@ -21,10 +21,6 @@ jobs:
               run: npm install; npm run export
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-            - name: Add CNAME
-              run: |-
-                    touch CNAME
-                    echo 'salomohutapea.me' > CNAME
             - name: Pushes to another repository
               uses: cpina/github-action-push-to-another-repository@master
               env:

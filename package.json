@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "sapper dev",
         "build": "sapper build --legacy",
-        "export": "sapper export --legacy",
+        "export": "sapper export --legacy && touch __sapper__/export/CNAME && echo 'salomohutapea.me' > __sapper__/export/CNAME ",
         "start": "node __sapper__/build"
     },
     "dependencies": {
